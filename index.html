@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Учебник JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Учебник JavaScript</h1>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <!-- Типы данных -->
+            <section id="data-types">
+                <h2>Типы данных</h2>
+                <p>
+                    <strong>alert, prompt, confirm:</strong> Функции для взаимодействия с пользователем через модальные окна.
+                    <ul>
+                        <li><code>alert(message)</code>: Отображает модальное окно с сообщением <code>message</code>.</li>
+                        <li><code>prompt(message, default)</code>: Отображает модальное окно с сообщением <code>message</code> и текстовым полем для ввода данных, предварительно заполненным значением <code>default</code>.</li>
+                        <li><code>confirm(message)</code>: Отображает модальное окно с сообщением <code>message</code> и кнопками "ОК" и "Отмена", возвращая <code>true</code> при нажатии "ОК" и <code>false</code> при нажатии "Отмена".</li>
+                    </ul>
+                </p>
+            </section>
+
+            <!-- Переменные -->
+            <section id="variables">
+                <h2>Переменные</h2>
+                <p>
+                    Переменные в JavaScript объявляются с использованием ключевых слов <code>var</code>, <code>let</code> или <code>const</code>.
+                    <ul>
+                        <li><code>var</code>: Глобальная или функциональная область видимости.</li>
+                        <li><code>let</code>: Блочная область видимости, позволяет изменять значение переменной.</li>
+                        <li><code>const</code>: Блочная область видимости, значение которой не может быть изменено после инициализации.</li>
+                    </ul>
+                </p>
+            </section>
+
+            <!-- console.log -->
+            <section id="console-log">
+                <h2>console.log</h2>
+                <p>
+                    <code>console.log</code> используется для вывода сообщений в консоль разработчика браузера. Это помогает отслеживать выполнение программы и отладку кода.
+                </p>
+            </section>
+
+            <!-- Условные операторы -->
+            <section id="if-else">
+                <h2>Условные операторы if/else</h2>
+                <p>
+                    Условные операторы <code>if</code> и <code>else</code> используются для выполнения кода, если определенное условие истинно (<code>if</code>) или ложно (<code>else</code>).
+                </p>
+            </section>
+
+            <!-- Логические операторы -->
+            <section id="logical-operators">
+                <h2>Логические операторы || и ??</h2>
+                <p>
+                    Операторы <code>||</code> и <code>??</code> используются для работы с логическими значениями и возвращают первый истинный операнд или последний операнд, если все ложные.
+                </p>
+            </section>
+
+            <!-- Циклы for и while -->
+            <section id="loops">
+                <h2>Циклы for и while</h2>
+                <p>
+                    <code>for</code> и <code>while</code> используются для многократного выполнения блока кода.
+                </p>
+            </section>
+
+            <!-- Функции -->
+            <section id="functions">
+                <h2>Функции</h2>
+                <p>
+                    Функции в JavaScript являются блоками кода, предназначенными для выполнения определенных задач. Они могут принимать аргументы и возвращать значения.
+                </p>
+            </section>
+
+            <!-- Switch -->
+            <section id="switch">
+                <h2>Оператор switch</h2>
+                <p>
+                    <code>switch</code> используется для выбора выполнения кода из множества вариантов на основе значения выражения.
+                </p>
+            </section>
+
+            <!-- Комментарии -->
+            <section id="comments">
+                <h2>Комментарии</h2>
+                <p>
+                    Комментарии в JavaScript используются для объяснения кода и игнорируются интерпретатором при выполнении программы.
+                </p>
+            </section>
+
+            <!-- Debugger -->
+            <section id="debugger">
+                <h2>Отладчик (debugger)</h2>
+                <p>
+                    <code>debugger</code> используется для остановки выполнения JavaScript кода и перехода в режим отладки в консоли разработчика браузера.
+                </p>
+            </section>
+
+            <!-- Объекты -->
+            <section id="objects">
+                <h2>Объекты</h2>
+                <p>
+                    Объекты в JavaScript это сложные структуры данных, которые содержат ключ-значение и методы для работы с данными.
+                </p>
+            </section>
+
+            <!-- Контекст (this) -->
+            <section id="this">
+                <h2>Контекст (this)</h2>
+                <p>
+                    Ключевое слово <code>this</code> в JavaScript ссылается на текущий объект, в контексте которого выполняется текущий код.
+                </p>
+            </section>
+
+            <!-- Методы Object -->
+            <section id="object-methods">
+                <h2>Методы Object</h2>
+                <p>
+                    <code>Object.keys()</code>, <code>Object.values()</code>, и <code>Object.entries()</code> используются для работы с объектами и их свойствами.
+                </p>
+            </section>
+
+            <!-- Дата и время -->
+            <section id="date-time">
+                <h2>Дата и время</h2>
+                <p>
+                    <code>new Date()</code> создает объект, представляющий текущую дату и время.
+                </p>
+            </section>
+
+            <!-- Рекурсия -->
+            <section id="recursion">
+                <h2>Рекурсия</h2>
+                <p>
+                    Рекурсия в JavaScript означает вызов функцией самой себя для решения задачи.
+                </p>
+            </section>
+
+            <!-- Замыкания -->
+            <section id="closures">
+                <h2>Замыкания</h2>
+                <p>
+                    Замыкание (closure) в JavaScript это функция, которая сохраняет доступ к переменным из внешней области видимости, где она была создана.
+                </p>
+            </section>
+
+            <!-- Таймеры setTimeout и setInterval -->
+            <section id="timers">
+                <h2>Таймеры setTimeout и setInterval</h2>
+                <p>
+                    <code>setTimeout()</code> и <code>setInterval()</code> используются для выполнения кода через определенный интервал времени.
+                </p>
+            </section>
+
+            <!-- Остаточные параметры и оператор расширения -->
+            <section id="rest-spread">
+                <h2>Остаточные параметры и оператор расширения</h2>
+                <p>
+                    Остаточные параметры и оператор расширения позволяют работать с переменным числом аргументов функции и расширять выражения в местах, где ожидаются несколько аргументов.
+                </p>
+            </section>
+
+            <!-- Прототип (_proto_) -->
+            <section id="prototype">
+                <h2>Прототип (_proto_)</h2>
+                <p>
+                    Прототип в JavaScript это механизм наследования объектов, который позволяет объектам наследовать свойства и методы других объектов.
+                </p>
+            </section>
+
+            <!-- Массивы -->
+            <section id="arrays">
+                <h2>Массивы</h2>
+                <p>
+                    Массивы в JavaScript представляют собой упорядоченную коллекцию элементов, индексируемых числовыми индексами.
+                </p>
+            </section>
+
+            <!-- BOM и DOM -->
+            <section id="bom-dom">
+                <h2>BOM и DOM</h2>
+                <p>
+                    BOM (Browser Object Model) и DOM (Document Object Model) представляют собой объектные модели браузера и документа, используемые для взаимодействия с окружением браузера и веб-страницами.
+                </p>
+            </section>
+
+            <!-- Fetch API -->
+            <section id="fetch-api">
+                <h2>Fetch API</h2>
+                <p>
+                    Fetch API используется для отправки и получения данных через сеть, заменяя устаревший XMLHttpRequest.
+                </p>
+            </section>
+
+            <!-- Cookie и Local Storage -->
+            <section id="cookie-localstorage">
+                <h2>Cookie и Local Storage</h2>
+                <p>
+                    Cookie и Local Storage являются механизмами хранения данных на стороне клиента в браузере.
+                </p>
+            </section>
+
+            <!-- Регулярные выражения -->
+            <section id="regular-expressions">
+                <h2>Регулярные выражения</h2>
+                <p>
+                    Регулярные выражения (RegExp) используются для поиска и замены текста на основе шаблона.
+                </p>
+            </section>
+
+            <!-- Промисы -->
+            <section id="promises">
+                <h2>Промисы</h2>
+                <p>
+                    Промисы (Promise) в JavaScript используются для управления асинхронными операциями и их результатами.
+                </p>
+            </section>
+
+            <!-- Колбэки -->
+            <section id="callbacks">
+                <h2>Колбэки</h2>
+                <p>
+                    Колбэки (Callback) в JavaScript это функции, передаваемые в качестве аргументов другим функциям и вызываемые после завершения определенной задачи.
+                </p>
+            </section>
+
+            <!-- Асинхронность и await -->
+            <section id="async-await">
+                <h2>Асинхронность и await</h2>
+                <p>
+                    Асинхронные функции и ключевое слово <code>await</code> используются для работы с асинхронными операциями в JavaScript в более читаемом и удобном виде.
+                </p>
+            </section>
+
+            <!-- Всплытие и погружение -->
+            <section id="bubbling-capturing">
+                <h2>Всплытие и погружение</h2>
+                <p>
+                    Всплытие (Bubbling) и погружение (Capturing) относятся к порядку обработки событий в DOM веб-страницы.
+                </p>
+            </section>
+
+            <!-- JSON -->
+            <section id="json">
+                <h2>JSON</h2>
+                <p>
+                    JSON (JavaScript Object Notation) используется для обмена данными между сервером и клиентом в удобном для чтения формате.
+                </p>
+            </section>
+
+            <!-- Методы массивов -->
+            <section id="array-methods">
+                <h2>Методы массивов</h2>
+                <p>
+                    Методы массивов в JavaScript позволяют выполнять различные операции над элементами массива, такие как добавление, удаление, изменение и т.д.
+                </p>
+            </section>
+
+            <!-- Все операторы -->
+            <section id="all-operators">
+                <h2>Все операторы</h2>
+                <p>
+                    В JavaScript существует множество операторов, включая арифметические, логические, сравнения, присваивания и другие, каждый из которых выполняет определенную операцию над данными.
+                </p>
+            </section>
+
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 JavaScript Учебник. Все права защищены.</p>
+        </div>
+    </footer>
+</body>
+</html>
