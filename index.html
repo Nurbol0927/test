@@ -25,6 +25,12 @@
                         <li><code>confirm(message)</code>: Отображает модальное окно с сообщением <code>message</code> и кнопками "ОК" и "Отмена", возвращая <code>true</code> при нажатии "ОК" и <code>false</code> при нажатии "Отмена".</li>
                     </ul>
                 </p>
+                <pre><code> 
+// Пример:
+alert('Привет, мир!');
+let name = prompt('Как тебя зовут?', 'Имя');
+let isAdmin = confirm('Ты администратор?'); 
+</code></pre>
             </section>
 
             <!-- Переменные -->
@@ -38,6 +44,12 @@
                         <li><code>const</code>: Блочная область видимости, значение которой не может быть изменено после инициализации.</li>
                     </ul>
                 </p>
+                <pre><code>
+// Пример:
+var age = 30;
+let userName = 'John';
+const pi = 3.14;
+</code></pre>
             </section>
 
             <!-- console.log -->
@@ -46,6 +58,10 @@
                 <p>
                     <code>console.log</code> используется для вывода сообщений в консоль разработчика браузера. Это помогает отслеживать выполнение программы и отладку кода.
                 </p>
+                <pre><code>
+// Пример:
+console.log('Это сообщение будет выведено в консоль');
+</code></pre>
             </section>
 
             <!-- Условные операторы -->
@@ -54,6 +70,15 @@
                 <p>
                     Условные операторы <code>if</code> и <code>else</code> используются для выполнения кода, если определенное условие истинно (<code>if</code>) или ложно (<code>else</code>).
                 </p>
+                <pre><code>
+// Пример:
+let number = 10;
+if (number > 5) {
+    console.log('Число больше 5');
+} else {
+    console.log('Число меньше или равно 5');
+}
+</code></pre>
             </section>
 
             <!-- Логические операторы -->
@@ -62,6 +87,18 @@
                 <p>
                     Операторы <code>||</code> и <code>??</code> используются для работы с логическими значениями и возвращают первый истинный операнд или последний операнд, если все ложные.
                 </p>
+                <pre><code>
+// Пример:
+let name = null;
+let defaultName = 'Гость';
+let userName = name || defaultName;
+console.log(userName); // 'Гость'
+
+let user = null;
+let guest = 'Гость';
+let currentUser = user ?? guest;
+console.log(currentUser); // 'Гость'
+</code></pre>
             </section>
 
             <!-- Циклы for и while -->
@@ -70,6 +107,18 @@
                 <p>
                     <code>for</code> и <code>while</code> используются для многократного выполнения блока кода.
                 </p>
+                <pre><code>
+// Пример:
+for (let i = 0; i < 5; i++) {
+    console.log(i);
+}
+
+let j = 0;
+while (j < 5) {
+    console.log(j);
+    j++;
+}
+</code></pre>
             </section>
 
             <!-- Функции -->
@@ -78,6 +127,14 @@
                 <p>
                     Функции в JavaScript являются блоками кода, предназначенными для выполнения определенных задач. Они могут принимать аргументы и возвращать значения.
                 </p>
+                <pre><code>
+// Пример:
+function greet(name) {
+    return `Привет, ${name}!`;
+}
+
+console.log(greet('Вася'));
+</code></pre>
             </section>
 
             <!-- Switch -->
@@ -86,6 +143,24 @@
                 <p>
                     <code>switch</code> используется для выбора выполнения кода из множества вариантов на основе значения выражения.
                 </p>
+                <pre><code>
+// Пример:
+let color = 'green';
+
+switch (color) {
+    case 'red':
+        console.log('Стоп');
+        break;
+    case 'yellow':
+        console.log('Внимание');
+        break;
+    case 'green':
+        console.log('Иди');
+        break;
+    default:
+        console.log('Неизвестный цвет');
+}
+</code></pre>
             </section>
 
             <!-- Комментарии -->
@@ -94,6 +169,15 @@
                 <p>
                     Комментарии в JavaScript используются для объяснения кода и игнорируются интерпретатором при выполнении программы.
                 </p>
+                <pre><code>
+// Это однострочный комментарий
+
+/*
+  Это
+  многострочный
+  комментарий
+*/
+</code></pre>
             </section>
 
             <!-- Debugger -->
@@ -102,6 +186,15 @@
                 <p>
                     <code>debugger</code> используется для остановки выполнения JavaScript кода и перехода в режим отладки в консоли разработчика браузера.
                 </p>
+                <pre><code>
+// Пример:
+function testDebug() {
+    debugger; // Выполнение остановится здесь
+    console.log('Отладка');
+}
+
+testDebug();
+</code></pre>
             </section>
 
             <!-- Объекты -->
@@ -110,6 +203,18 @@
                 <p>
                     Объекты в JavaScript это сложные структуры данных, которые содержат ключ-значение и методы для работы с данными.
                 </p>
+                <pre><code>
+// Пример:
+let person = {
+    name: 'John',
+    age: 30,
+    greet: function() {
+        console.log('Привет, ' + this.name);
+    }
+};
+
+person.greet();
+</code></pre>
             </section>
 
             <!-- Контекст (this) -->
@@ -118,6 +223,17 @@
                 <p>
                     Ключевое слово <code>this</code> в JavaScript ссылается на текущий объект, в контексте которого выполняется текущий код.
                 </p>
+                <pre><code>
+// Пример:
+let user = {
+    name: 'Alice',
+    sayHi() {
+        console.log(this.name);
+    }
+};
+
+user.sayHi();
+</code></pre>
             </section>
 
             <!-- Методы Object -->
@@ -126,46 +242,112 @@
                 <p>
                     <code>Object.keys()</code>, <code>Object.values()</code>, и <code>Object.entries()</code> используются для работы с объектами и их свойствами.
                 </p>
+                <pre><code>
+// Пример:
+let person = {
+    name: 'Bob',
+    age: 25
+};
+
+console.log(Object.keys(person)); // ['name', 'age']
+console.log(Object.values(person)); // ['Bob', 25]
+console.log(Object.entries(person)); // [['name', 'Bob'], ['age', 25]]
+</code></pre>
             </section>
 
             <!-- Дата и время -->
             <section id="date-time">
                 <h2>Дата и время</h2>
                 <p>
-                    <code>new Date()</code> создает объект, представляющий текущую дату и время.
+                    <code>new Date()</code> используется для работы с датами и временем в JavaScript.
                 </p>
+                <pre><code>
+// Пример:
+let now = new Date();
+console.log(now);
+</code></pre>
             </section>
 
             <!-- Рекурсия -->
             <section id="recursion">
                 <h2>Рекурсия</h2>
                 <p>
-                    Рекурсия в JavaScript означает вызов функцией самой себя для решения задачи.
+                    Рекурсия это процесс, когда функция вызывает саму себя для решения задачи.
                 </p>
+                <pre><code>
+// Пример:
+function factorial(n) {
+    if (n === 0) {
+        return 1;
+    }
+    return n * factorial(n - 1);
+}
+
+console.log(factorial(5)); // 120
+</code></pre>
             </section>
 
             <!-- Замыкания -->
             <section id="closures">
                 <h2>Замыкания</h2>
                 <p>
-                    Замыкание (closure) в JavaScript это функция, которая сохраняет доступ к переменным из внешней области видимости, где она была создана.
+                    Замыкания это функции, которые имеют доступ к переменным из внешней функции, даже после завершения выполнения этой внешней функции.
                 </p>
+                <pre><code>
+// Пример:
+function makeCounter() {
+    let count = 0;
+    return function() {
+        return count++;
+    };
+}
+
+let counter = makeCounter();
+console.log(counter()); // 0
+console.log(counter()); // 1
+</code></pre>
             </section>
 
-            <!-- Таймеры setTimeout и setInterval -->
+            <!-- setTimeout и setInterval -->
             <section id="timers">
-                <h2>Таймеры setTimeout и setInterval</h2>
+                <h2>setTimeout и setInterval</h2>
                 <p>
-                    <code>setTimeout()</code> и <code>setInterval()</code> используются для выполнения кода через определенный интервал времени.
+                    <code>setTimeout</code> и <code>setInterval</code> используются для выполнения функций с задержкой и через определенные интервалы времени соответственно.
                 </p>
+                <pre><code>
+// Пример:
+setTimeout(() => {
+    console.log('Прошло 2 секунды');
+}, 2000);
+
+let intervalId = setInterval(() => {
+    console.log('Прошла 1 секунда');
+}, 1000);
+
+setTimeout(() => {
+    clearInterval(intervalId);
+}, 5000);
+</code></pre>
             </section>
 
             <!-- Остаточные параметры и оператор расширения -->
             <section id="rest-spread">
                 <h2>Остаточные параметры и оператор расширения</h2>
                 <p>
-                    Остаточные параметры и оператор расширения позволяют работать с переменным числом аргументов функции и расширять выражения в местах, где ожидаются несколько аргументов.
+                    Остаточные параметры <code>...</code> позволяют функции принимать неограниченное количество аргументов, а оператор расширения <code>...</code> используется для развертывания массивов или объектов.
                 </p>
+                <pre><code>
+// Пример:
+function sum(...args) {
+    return args.reduce((acc, value) => acc + value, 0);
+}
+
+console.log(sum(1, 2, 3, 4)); // 10
+
+let arr = [1, 2, 3];
+let newArr = [...arr, 4, 5];
+console.log(newArr); // [1, 2, 3, 4, 5]
+</code></pre>
             </section>
 
             <!-- Прототип (_proto_) -->
@@ -174,6 +356,19 @@
                 <p>
                     Прототип в JavaScript это механизм наследования объектов, который позволяет объектам наследовать свойства и методы других объектов.
                 </p>
+                <pre><code>
+// Пример:
+let animal = {
+    eats: true
+};
+
+let rabbit = {
+    jumps: true,
+    __proto__: animal
+};
+
+console.log(rabbit.eats); // true
+</code></pre>
             </section>
 
             <!-- Массивы -->
@@ -182,6 +377,11 @@
                 <p>
                     Массивы в JavaScript представляют собой упорядоченную коллекцию элементов, индексируемых числовыми индексами.
                 </p>
+                <pre><code>
+// Пример:
+let fruits = ['Apple', 'Banana', 'Cherry'];
+console.log(fruits[1]); // 'Banana'
+</code></pre>
             </section>
 
             <!-- BOM и DOM -->
@@ -190,6 +390,11 @@
                 <p>
                     BOM (Browser Object Model) и DOM (Document Object Model) представляют собой объектные модели браузера и документа, используемые для взаимодействия с окружением браузера и веб-страницами.
                 </p>
+                <pre><code>
+// Пример:
+document.body.style.backgroundColor = 'lightblue';
+console.log(window.innerWidth);
+</code></pre>
             </section>
 
             <!-- Fetch API -->
@@ -198,6 +403,12 @@
                 <p>
                     Fetch API используется для отправки и получения данных через сеть, заменяя устаревший XMLHttpRequest.
                 </p>
+                <pre><code>
+// Пример:
+fetch('https://jsonplaceholder.typicode.com/todos/1')
+    .then(response => response.json())
+    .then(json => console.log(json));
+</code></pre>
             </section>
 
             <!-- Cookie и Local Storage -->
@@ -206,6 +417,14 @@
                 <p>
                     Cookie и Local Storage являются механизмами хранения данных на стороне клиента в браузере.
                 </p>
+                <pre><code>
+// Пример:
+document.cookie = 'username=John';
+localStorage.setItem('user', 'John');
+
+console.log(document.cookie);
+console.log(localStorage.getItem('user'));
+</code></pre>
             </section>
 
             <!-- Регулярные выражения -->
@@ -214,6 +433,12 @@
                 <p>
                     Регулярные выражения (RegExp) используются для поиска и замены текста на основе шаблона.
                 </p>
+                <pre><code>
+// Пример:
+let re = /\d+/g;
+let str = 'Есть 100 яблок и 20 бананов';
+console.log(str.match(re)); // ['100', '20']
+</code></pre>
             </section>
 
             <!-- Промисы -->
@@ -222,6 +447,14 @@
                 <p>
                     Промисы (Promise) в JavaScript используются для управления асинхронными операциями и их результатами.
                 </p>
+                <pre><code>
+// Пример:
+let promise = new Promise((resolve, reject) => {
+    setTimeout(() => resolve('Успех!'), 2000);
+});
+
+promise.then(result => console.log(result)); // 'Успех!'
+</code></pre>
             </section>
 
             <!-- Колбэки -->
@@ -230,6 +463,19 @@
                 <p>
                     Колбэки (Callback) в JavaScript это функции, передаваемые в качестве аргументов другим функциям и вызываемые после завершения определенной задачи.
                 </p>
+                <pre><code>
+// Пример:
+function loadScript(src, callback) {
+    let script = document.createElement('script');
+    script.src = src;
+    script.onload = () => callback(script);
+    document.head.append(script);
+}
+
+loadScript('path/to/script.js', (script) => {
+    console.log('Скрипт загружен: ' + script.src);
+});
+</code></pre>
             </section>
 
             <!-- Асинхронность и await -->
@@ -238,6 +484,16 @@
                 <p>
                     Асинхронные функции и ключевое слово <code>await</code> используются для работы с асинхронными операциями в JavaScript в более читаемом и удобном виде.
                 </p>
+                <pre><code>
+// Пример:
+async function fetchData() {
+    let response = await fetch('https://jsonplaceholder.typicode.com/todos/1');
+    let data = await response.json();
+    console.log(data);
+}
+
+fetchData();
+</code></pre>
             </section>
 
             <!-- Всплытие и погружение -->
@@ -246,6 +502,16 @@
                 <p>
                     Всплытие (Bubbling) и погружение (Capturing) относятся к порядку обработки событий в DOM веб-страницы.
                 </p>
+                <pre><code>
+// Пример:
+document.getElementById('myDiv').addEventListener('click', () => {
+    console.log('Clicked!');
+}, true); // Погружение
+
+document.getElementById('myDiv').addEventListener('click', () => {
+    console.log('Clicked!');
+}, false); // Всплытие
+</code></pre>
             </section>
 
             <!-- JSON -->
@@ -254,30 +520,63 @@
                 <p>
                     JSON (JavaScript Object Notation) используется для обмена данными между сервером и клиентом в удобном для чтения формате.
                 </p>
+                <pre><code>
+// Пример:
+let jsonString = '{"name": "John", "age": 30}';
+let user = JSON.parse(jsonString);
+console.log(user.name); // 'John'
+
+let json = JSON.stringify(user);
+console.log(json); // '{"name":"John","age":30}'
+</code></pre>
             </section>
 
             <!-- Методы массивов -->
             <section id="array-methods">
                 <h2>Методы массивов</h2>
                 <p>
-                    Методы массивов в JavaScript позволяют выполнять различные операции над элементами массива, такие как добавление, удаление, изменение и т.д.
+                    Методы массивов в JavaScript предоставляют множество функций для работы с массивами, включая добавление, удаление, фильтрацию и преобразование элементов.
                 </p>
+                <pre><code>
+// Пример:
+let numbers = [1, 2, 3, 4, 5];
+
+let doubled = numbers.map(num => num * 2);
+console.log(doubled); // [2, 4, 6, 8, 10]
+
+let evens = numbers.filter(num => num % 2 === 0);
+console.log(evens); // [2, 4]
+
+numbers.push(6);
+console.log(numbers); // [1, 2, 3, 4, 5, 6]
+</code></pre>
             </section>
 
-            <!-- Все операторы -->
-            <section id="all-operators">
-                <h2>Все операторы</h2>
+            <!-- Остальные операторы -->
+            <section id="operators">
+                <h2>Остальные операторы</h2>
                 <p>
-                    В JavaScript существует множество операторов, включая арифметические, логические, сравнения, присваивания и другие, каждый из которых выполняет определенную операцию над данными.
+                    В JavaScript также есть различные операторы, такие как арифметические, логические, побитовые и т.д., которые позволяют выполнять операции над значениями и переменными.
                 </p>
-            </section>
+                <pre><code>
+// Пример:
+let x = 10;
+let y = 5;
 
+console.log(x + y); // 15
+console.log(x - y); // 5
+console.log(x * y); // 50
+console.log(x / y); // 2
+
+console.log(x > y); // true
+console.log(x < y); // false
+console.log(x === y); // false
+
+let z = x & y; // Побитовый И
+console.log(z); // 0
+</code></pre>
+            </section>
         </div>
     </main>
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 JavaScript Учебник. Все права защищены.</p>
-        </div>
-    </footer>
 </body>
 </html>
